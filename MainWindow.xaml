@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashCalc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="CashCalc © Samer C. 2024" Height="450" Width="800">
+
     <Grid>
-        
+        <Label Content="Enter a monetary amount, and this application will calculate the minimum number of bills and coins required to achieve the specified total:"/>
+        <StackPanel Margin="20" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBox x:Name="txtAmount" Width="240" Height="30" Margin="10" Text="81" />
+            <Button Content="Calculate" Click="btnCalculate_Click" Height="30" Margin="10" Width="80"/>
+            <TextBlock x:Name="txtTotalPieces" Margin="10"/>
+            <TextBlock x:Name="txtBills" Margin="10"/>
+            <TextBlock x:Name="txtCoins" Margin="10"/>
+            <TextBlock x:Name="txtBreakdown" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>
